@@ -18,7 +18,7 @@
 			$notification.html('<p>' + response + '</p>');
 		})
 		.fail(function(error){
-			$notification.html('<p>' + error + '</p>');
+			$notification.html('<p>Error: ' + error + '</p>');
 		});
 
 
@@ -200,7 +200,6 @@
 
 		var searchReport = function(e) {
 			var target = e.target,
-				//searchInput = target.childNodes[1].value,
 				$searchInput = $(target).children().val(),
 				$notification = $('.notifications'),
 				$nameFields = $('.js-site-name'),
