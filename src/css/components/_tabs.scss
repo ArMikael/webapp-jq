@@ -1,0 +1,79 @@
+/**
+ * @section Tabs
+ * Styling and Layout for Application Tabs.
+ */
+
+.tabs {
+	position: relative;
+	margin: 10px auto;
+	min-height: 1200px;
+	margin: 0 1% 2% 1%;
+	width: 97%;
+}
+
+.tab {
+	float: left;
+	height: 22px;
+	width: 22.5%;
+	margin-right: 3.33%;
+	display: inline-block;
+	background-color: $darkgrey;
+	color: #fff;
+	padding: 10px 0;
+	cursor: pointer;
+	text-align: center;
+}
+
+.last-tab {
+	margin-right: 0;
+}
+
+.tab-icon {
+	font-size: 1rem;
+}
+
+.active-tab {
+	background-color: $lightgrey;
+	color: $color-black;
+}
+
+.content {
+	position: absolute;
+	top: 42px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: $lightgrey;
+	padding: 20px;
+	color: $color-black;
+	display: none;
+
+	.active-tab & {
+		display: block;
+	}
+}
+
+select {
+	float: left;
+	margin: 10px 0;
+	width: 160px;
+
+	/* Accessibility for Tabs */
+	&:focus {
+		background-color: $color-yellow;
+	}
+}
+
+.site-frame	{
+	height: 1200px;
+}
+
+.iframe {
+	overflow: hidden;
+	height: 100%;
+}
+
+.my-folders-frame,
+.public-folders-frame {
+	margin-top:40px;
+}

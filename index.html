@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>WebApp</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="public/css/main.min.css">
+		<!-- <link rel="stylesheet" href="src/css/normalize.css"> -->
+		<!-- <link rel="stylesheet" href="src/css/main.css"> -->
+		<script src="src/js/vendor/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+		<!-- Add your site or application content here -->
+		<header>
+		  <div class="layout-wrap">
+			<a href="#" tabindex="0" >netcraft<img src="https://googledrive.com/host/0B6ZIsommzsgVMVA2MzdKUjN2S0U/logo-netcraft.svg" alt="netcraft"></a>
+
+			<form id="search" class="search" >
+				<input type="search" name="q" placeholder="Search" results="5" tabindex="0" >
+			</form>
+		  </div>
+		</header>
+
+		<div class="page-body">
+			<div class="notifications">
+
+			</div>
+
+			<nav class="main-nav clearfix">
+				<div class="nav-section cat-reports">
+					<p>Select Reporting Platform</p>
+
+					<div class="menu" >
+						<div class="menu-hint">
+							<p>Choose QS report</p>
+							<i class="fa fa-caret-down"></i>
+						</div>
+
+						<ul class="menu-items" >
+							<li><a href="#" tabindex="0" data-item>Corporate</a></li>
+							<li><a href="#" tabindex="0">Simple</a></li>
+							<li><a href="#" tabindex="0">Business</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="nav-section cat-dashboard">
+					<p>Select Dashboard</p>
+
+					<div class="menu" >
+						<div class="menu-hint">
+							<p>Choose dashboard</p>
+							<i class="fa fa-caret-down"></i>
+						</div>
+
+						<ul class="menu-items">
+							<li><a href="#" tabindex="0">Google</a></li>
+							<li><a href="#" tabindex="0">Microsoft</a></li>
+							<li><a href="#" tabindex="0">Apple</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="nav-section cat-help">
+					<p>Help &amp; Tutorials</p>
+
+					<div class="menu">
+						<div class="menu-hint">
+							<p>Choose guide</p>
+							<i class="fa fa-caret-down"></i>
+						</div>
+
+						<ul class="menu-items">
+							<li><a href="#" tabindex="0">Corporate</a></li>
+							<li><a href="#" tabindex="0">Business</a></li>
+							<li>
+								<a href="#" class="last-menu-item" tabindex="0">
+									Private
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+			<div class="tabs clearfix">
+				<div class="tabs-list" role="tab-list">
+
+					<a class="tab active-tab" id="tab1" tabindex="0"
+					role="tab">
+   						<i class="fa fa-external-link tab-icon"></i>
+   						Quick Reports
+						<div class="content">
+
+							<span class="app-button new-tab-btn"
+							tabindex="0" role="button"></span>
+							<span class="app-button reports-btn"
+							tabindex="0" role="button"></span>
+
+		  					<select class="web-sites" id="qs-sites-list" tabindex="0">
+		 					</select>
+
+							<form class="reports active-window" id="qr-form">
+								<fieldset class="report-row" id="fieldset1">
+									<span>Report 01</span>
+									<label for="qr-name1">Name</label>
+									<input type="text" name="qr-name1" id="qr-name1"
+									class="js-site-name" placeholder="Site name">
+									<label for="qr-url1" class="site-url">URL</label>
+									<input type="url" name="qr-url1" id="qr-url1"
+									class="js-site-url" placeholder="Site URL">
+								</fieldset>
+
+								<fieldset class="report-row" id="fieldset2">
+									<span>Report 02</span>
+									<label for="qr-name2">Name</label>
+									<input type="text" name="qr-name2" id="qr-name2"
+									class="js-site-name" placeholder="Site name">
+									<label for="qr-url2" class="site-url">URL</label>
+									<input type="url" name="qr-url2" id="qr-url2"
+									class="js-site-url" placeholder="Site URL">
+								</fieldset>
+
+								<fieldset class="report-row" id="fieldset3">
+									<span>Report 03</span>
+									<label for="qr-name3">Name</label>
+									<input type="text" name="qr-name3" id="qr-name3"
+									class="js-site-name" placeholder="Site name">
+									<label for="qr-url3" class="site-url">URL</label>
+									<input type="url" name="qr-url3" id="qr-url3"
+									class="js-site-url" placeholder="Site URL">
+								</fieldset>
+
+								<span class='system-message'></span>
+								<button type="submit" class="submit_btn">Save</button>
+								<button type="button" class="cancel-btn">Cancel</button>
+							</form>
+
+
+		 					<div class="site-frame">
+		 						<iframe id='qs-iframe' width="100%"	height="87%"
+		 						 frameborder="0" tabindex="-1">
+									<p>Your browser does not support ifames.</p>
+								</iframe>
+		 					</div>
+
+						</div>
+					</a>
+
+					<a class="tab" id="tab2" tabindex="0" role="tab">
+						<i class="fa fa-star-o tab-icon"></i>
+   						My Folders
+						<div class="content">
+
+							<span class="app-button new-tab-btn alone-btn"
+							tabindex="0" role="button"></span>
+
+							<div class="site-frame my-folders-frame">
+								<iframe frameborder="0"
+								width="100%" height="87%" tabindex="-1">
+								<p>Your browser does not support ifames.</p>
+								</iframe>
+							</div>
+						</div>
+					</a>
+					<a class="tab" id="tab3"  tabindex="0" role="tab">
+						<i class="fa fa-folder-open-o tab-icon"></i>
+   						My Team Folders
+						<div class="content">
+
+							<span class="app-button new-tab-btn"
+							tabindex="0" role="button"></span>
+							<span class="app-button reports-btn"
+							tabindex="0" role="button"></span>
+
+							<select class="web-sites" id="mtf-sites-list" tabindex="0">
+		 					</select>
+
+							<form class="reports active-window" id="mtf-form">
+								<fieldset class="report-row" id="fieldset4">
+									<span>Report 01</span>
+									<label for="mtf-name1">Name</label>
+									<input type="text" name="mtf-name1" id="mtf-name1"
+									class="js-site-name" placeholder="Site name">
+									<label for="mtf-url1" class="site-url">URL</label>
+									<input type="url" name="mtf-url1" id="mtf-url1"
+									class="js-site-url" placeholder="Site URL">
+								</fieldset>
+
+								<fieldset class="report-row" id="fieldset5">
+									<span>Report 02</span>
+									<label for="mtf-name2">Name</label>
+									<input type="text" name="mtf-name2" id="mtf-name2"
+									class="js-site-name" placeholder="Site name">
+									<label for="mtf-url2" class="site-url">URL</label>
+									<input type="url" name="mtf-url2" id="mtf-url2"
+									class="js-site-url" placeholder="Site URL">
+								</fieldset>
+
+								<fieldset class="report-row" id="fieldset6">
+									<span>Report 03</span>
+									<label for="mtf-name3">Name</label>
+									<input type="text" name="mtf-name3" id="mtf-name3"
+									class="js-site-name" placeholder="Site name">
+									<label for="mtf-url3" class="site-url">URL</label>
+									<input type="url" name="mtf-url3" id="mtf-url3"
+									class="js-site-url" placeholder="Site URL">
+								</fieldset>
+
+								<span class='system-message'></span>
+								<button type="submit" class="submit_btn">Save</button>
+								<button class="cancel-btn">Cancel</button>
+							</form>
+
+
+							<div class="site-frame">
+								<!-- src="http://todomvc.com/" -->
+								<iframe  frameborder="0" width="100%" height="87%"
+								tabindex="-1" id="mtf-iframe">
+								<p>Your browser does not support ifames.</p>
+								</iframe>
+							</div>
+						</div>
+					</a>
+					<a class="tab last-tab" id="tab4" tabindex="0" role="tab">
+						<i class="fa fa-files-o tab-icon"></i>
+   						Public Folders
+						<div class="content">
+
+							<span class="app-button new-tab-btn alone-btn"
+							tabindex="0" role="button"></span>
+
+							<div class="site-frame public-folders-frame">
+								<iframe frameborder="0"
+								width="100%" height="87%" tabindex="-1">
+								<p>Your browser does not support ifames.</p>
+								</iframe>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="src/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+		<script src="public/js/main.min.js"></script>
+
+
+	</body>
+</html>

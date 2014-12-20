@@ -1,0 +1,47 @@
+/**
+ * @section Buttons
+ * Styling for CSS buttons.
+ */
+
+.app-button {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		background-color: #fff;
+		cursor: pointer;
+	}
+}
+
+.new-tab-btn {
+	right: 60px;
+	top: 20px;
+	background: url(../../img/icons/expand.png) no-repeat 50% 50%;
+}
+
+
+.reports-btn {
+	right: 20px;
+	top: 20px;
+	background: url(../../img/icons/settings.png) no-repeat 50% 50%;
+}
+
+.alone-btn {
+	right: 20px;
+	top: 20px;
+}
+
+.submit_btn,
+.cancel-btn {
+	height: 30px;
+	float: right;
+	margin: 10px;
+	background-color: #000;
+	color: white;
+	width: 100px;
+	border: none;
+}

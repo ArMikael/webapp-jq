@@ -1,0 +1,112 @@
+/**
+ * @section Navigation
+ * Structure, layout and styling
+ */
+
+/**
+ * Main Navigation Components
+ */
+
+.main-nav {
+	height: 200px;
+}
+
+.menu-hint {
+	background-color: $lightgrey;
+	height: 40px;
+	text-align: left;
+	line-height: 40px;
+	position: relative;
+	padding-left: 2%;
+
+	p {
+		margin: 0;
+	}
+}
+
+.fa-caret-down {
+	position: absolute;
+	right: 4%;
+	top: 6px;
+	font-size: 1.6rem;
+}
+
+.nav-section {
+	display: inline-block;
+	float: left;
+	position: relative;
+	background: $color-black no-repeat center 60px;
+	margin: 1%;
+	width: 31%;
+	height: 160px;
+
+	& > p {
+	    line-height: 50px;
+	    height: 120px;
+	    margin: 0;
+	    text-align: center;
+	    color: white;
+	}
+
+	&:hover .menu-items,
+	&:focus .menu-items {
+		height: 160px;
+	}
+
+	&:hover .fa {
+		transform: rotate(180deg);
+		transition: transform .5s;
+	}
+
+	a {
+		display: block;
+		background-color: #FFF;
+		text-decoration: none;
+		color: grey;
+		padding-left: 20px;
+		height: 30px;
+		line-height: 30px;
+		border-bottom: 1px solid grey;
+	}
+
+	a:hover, a:focus {
+		background-color: $color-yellow;
+	}
+}
+
+.cat-reports {
+	background-image: url(../../img/icons/action-report-new.png);
+}
+
+.cat-dashboard {
+	background-image: url(../../img/icons/action-report-top.png);
+}
+
+.cat-help {
+	background-image: url(../../img/icons/actions-help.png);
+}
+
+.menu-items {
+	height: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	list-style: none;
+	position: absolute;
+	left: 0;
+	top: 160px;
+	color: $lightgrey;
+	transition: height .3s;
+	z-index: 3;
+}
+
+.active-item {
+	background-color: $color-yellow;
+	transition: background-color .4s;
+}
+
+.active-menu {
+	height: 160px;
+}
+

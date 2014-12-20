@@ -1,0 +1,63 @@
+body {
+	background: url("../../img/body-background.jpg") no-repeat;
+	background-size: auto 100%;
+	margin: 0;
+	position: relative;
+	height: 1600px;
+}
+
+header {
+	background-color: $color-black;
+	height: 40px;
+	padding: 20px;
+
+	a {
+		display: block;
+		position: relative;
+		text-indent: -999px;
+	}
+
+	a img {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	&:after {
+		content: " ";
+		clear: both;
+	}
+}
+
+.layout-wrap, .page-body {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.page-body {
+	background-color: grey;
+	padding: 10px 20px;
+	max-width: 1200px;
+	min-width: 780px;
+}
+
+.search {
+	position: absolute;
+	top: 20px;
+	right: 100px;
+
+	input {
+		height: 30px;
+		padding-left: 10px;
+	}
+}
+
+
+.notifications {
+	background-color: $lightgrey;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 2%;
+	margin: 0 1%;
+	width: 93%;
+}
