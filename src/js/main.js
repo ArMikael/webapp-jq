@@ -12,7 +12,7 @@
 		var $notification = $('.notifications');
 
 		$.ajax({
-			url: '../../data/notification.txt'
+			url: 'data/notification.txt'
 		})
 		.done(function(response){
 			$notification.html('<p>' + response + '</p>');
