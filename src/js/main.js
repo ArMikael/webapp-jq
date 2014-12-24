@@ -28,7 +28,6 @@
 			$activeTab,
 			savedReports;
 
-
 		// Creating "Select" options
 		var createOptions = function (sitesCollector) {
 
@@ -128,7 +127,6 @@
 				$parent.parent().addClass('active-menu');
 			}
 		};
-
 
 		/**
 		 * Reports section
